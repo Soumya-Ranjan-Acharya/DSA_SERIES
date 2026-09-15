@@ -31,6 +31,22 @@ public class Q18 {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
+        int count_1=0;
+        int max_count=0;
+        for(int i=0;i<n;i++){
+            if(a[i]==1){
+                count_1++;
+                if(count_1 > max_count) {
+                    max_count = count_1;
+                }
+            }
+            else{
+                count_1 = 0;
+            }
+        }
+
+        System.out.println("Maximum consecutive 1s: " + max_count);
+
         sc.close();
     }
 }        
