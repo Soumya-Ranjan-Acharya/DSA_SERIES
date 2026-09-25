@@ -27,7 +27,7 @@ public class Q4{
     boolean inWord=false;
     if(str==null ){
         System.out.println("string is empty");
-        return;
+       
     }
     for(int i=0;i<str.length();i++){
         char c=str.charAt(i);
@@ -48,6 +48,8 @@ public class Q4{
    
          System.out.println("Number of words: " + count);
 
+
+         sc.close();
         }
         
         
